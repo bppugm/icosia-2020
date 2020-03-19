@@ -1,6 +1,6 @@
-# Website for the ICST 2020
+# Website for the ICoSIA 2020
 
-This is the website for The 6<sup>th</sup> International Conference on Science and Technology (ICST 2020), hosted by Universitas Gadjah Mada.
+This is the website for The 6<sup>th</sup> International Conference on Science and Technology (ICoSIA 2020), hosted by Universitas Gadjah Mada.
 
 ## Credits
 

@@ -1,5 +1,5 @@
 /*!
-  * Google Analytics for ICST Website
+  * Google Analytics for ICoSIA Website
   */
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
