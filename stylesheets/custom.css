@@ -36,14 +36,10 @@ h1 {
   min-height: 400px;
 }
 
-.nav-pills .nav-link.active {
-  color: #fff !important;
-}
-
 code {
   padding: 0.2rem 0.4rem;
   font-size: 90%;
-  color: #a1164e;
+  color: #3c74ac;
   background-color: #f7f7f9;
   border-radius: 0.25rem;
 }
@@ -58,17 +54,112 @@ code {
   pointer-events: none;
 }
 
+/* BADGE */
+
+.badge-ico-done {
+  color: #00B294;
+  background-color: rgba(0, 178, 148, 0.123);
+}
+
+.badge-ico-process {
+  color: #0078d4;
+  background-color: #0078d41a;
+}
+
+.nav-link:hover .badge-ico-process,
+.nav-link.active .badge-ico-done {
+  color: #605e5c;
+  background-color: #fff !important;
+}
+
+.nav-link.active .badge-ico-process,
+.nav-link.active .badge-ico-done {
+  color: #ffb900;
+  background-color: transparent;
+}
+
+/* NAV Item */
+
+.nav-item a {
+  color: grey;
+}
+
+.nav-item .nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-item a.active span {
+  background: #1d73cc;
+}
+
+.nav-item a.active {
+  color: #1d73cc !important;
+}
+
+/* NAV Pills */
+
+.nav-pills .nav-link {
+  border-radius: .5rem !important;
+  color: #343a40;
+  margin: .5rem;
+}
+
+.nav-pills .nav-link:hover{
+  background-color: #f8f9fa;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #000 !important;
+  background-color: #ffc1071f;
+}
+
+/* NAV Tabs */
+
+.nav-tabs {
+  border-bottom: 0px !important;
+}
+
+.nav-tabs .nav-item {
+  color: #343a40;
+  margin-bottom: 0px !important;
+}
+
+.nav-tabs .nav-link {
+  border: 0px !important;
+  border-radius: 0rem !important;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+  border-top: solid 3px grey !important;
+  margin-top: -3px;
+}
+
+.nav-tabs .nav-link.disabled {
+  color: #6c757d;
+  background-color: #1d72cc1f;
+  border-color: transparent;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background-color: #ffc1071f;
+  border-top: solid 3px #ffc107 !important;
+  margin-top: -3px;
+  margin-bottom: -9px !important;
+}
+
+.nav-tabs .dropdown-menu {
+  margin-top: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 /* FOOTER */
 
 .footer {
-  /* Commenting out sticky until needed because of background colour bug */
-  /*position: absolute;*/
-  /*bottom: 0;*/
-  /*width: 100%;*/
-  /*height: 300px;*/
-  background-color: #f8f7fd;
+  background-color: #f4fcf7;
   border-top: 1px solid #eaeaf6;
-  font-size: 90%;
 }
 
 /* COLUMNS IN BLUE AREA */
@@ -130,7 +221,7 @@ code {
 }
 
 .social-media-row a:hover {
-  color: #a1164e;
+  color: #1d73cc;
 }
 
 /* LIST OF PRESENTERS */
@@ -393,6 +484,12 @@ code {
   }
 }
 
+::-webkit-scrollbar {
+  width: 0px !important; /* remove scrollbar space */
+  background: transparent; /* optional: just make scrollbar invisible */
+  -ms-overflow-style: none;
+}
+
 /* TUTORIAL IMAGE */
 
 .img-tutorial {
@@ -406,7 +503,7 @@ code {
   }
 }
 
-/* THE ICoSIA 2020 IN IMAGES AND WORDS */
+/* THE ICST 2020 IN IMAGES AND WORDS */
 
 /* TEXT */
 
@@ -706,33 +803,46 @@ code {
   height: 40px;
 }
 
-.nav-item a {
-  color: grey;
-}
-
-.nav-item a.active span {
-  background: #a1164e;
-}
-
-.nav-item a.active {
-  color: #a1164e !important;
-}
-
+/* BACKGROUNDS */
 
 .bg-primary {
-  background-color: #a1164e !important;
+  background-color: #1d73cc !important;
 }
 
 .btn-primary {
-  background-color: #a1164e !important;
-  border-color: #a1164e !important;
-  color: #fff !important;
+  background-color: #1d73cc !important;
+  border-color: #1d73cc !important;
 }
 
-.btn-success {
-  color: #fff !important;
+.bg-pattern-icosia {
+  background-color: #f4fcf7;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23c1fdd5' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-a {
-  color:  #a1164e !important;
+/* speakers */
+.speaker-img {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #e5e5e5;
+  border-radius: .5rem;
 }
+.speaker-info {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+.speaker-name {
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: .5;
+  font-family: "Montserrat", Arial, "Calibri", sans-serif;
+}
+.speaker-aff {
+  font-size: .8rem;
+  font-weight: 400;
+  font-family: "Open Sans", Arial, "Calibri", sans-serif;
+}
+
+/* p a {
+  color:  #1d73cc !important;
+} */
