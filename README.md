@@ -23,4 +23,4 @@ This is the website for the International Conference on Smart and Innovative Agr
 
 ## License
 
-© 2019 Badan Penerbit dan Publikasi UGM under the MIT License.
+© 2020 Badan Penerbit dan Publikasi UGM under the MIT License.
